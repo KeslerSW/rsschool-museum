@@ -1,0 +1,105 @@
+html {
+    scroll-behavior: smooth;
+}
+body {
+    min-width: 1920px;
+}
+main {
+    max-width: 1440px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 1920px;
+    height: 150px;
+    background-color: #030303;
+}
+.header-cont {
+    position: fixed;
+    left: 240px;
+    top: 62px;
+    height: 26px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 466px;
+}
+.nav-list {
+    /*position: fixed;
+    right: 905px;
+    left: 240px;
+    top: 62px;
+    bottom: 62px;*/
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 55px;
+    flex-shrink: 0;
+    width: 775px;
+    height: 26px;
+}
+.nav-item {
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 200;
+    line-height: normal;
+    letter-spacing: 2px;
+}
+.logo {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    width: 199px;
+    height: 33px;
+    gap: 25px;
+    font-family: 'Forum';
+    color: #fff;
+    font-size: 28px;
+    font-style: normal;
+    line-height: normal;
+    font-weight: 400;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.welcome-page {
+    position: relative;
+    left: -10px;
+    top: 118px;
+    width: 1920px;
+    height: 842px;
+    background-color: #030303;
+}
+.welcome-text {
+    z-index: 1;
+    position: absolute;
+    top: 182px;
+    left: 240px;
+    width: 700px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 90 , 112.5% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.welcome-slider {
+    position: absolute;
+    top: 32px;
+    left: 680px;
+    width: 1000px;
+    height: 750px;
+    /*background-size: cover;
+    background-image: url(/assets/img/welcome-slider/1.png);*/
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(/assets/img/welcome-slider/1.png) lightgray 50% / cover;
+}
