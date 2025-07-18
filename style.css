@@ -122,6 +122,9 @@ main {
     border-radius: 10px;
     background: #710707;
 }
+.link {
+    text-decoration: none;
+}
 .welcome-button-text {
     display: flex;
     width: 232px;
