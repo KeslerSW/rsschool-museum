@@ -216,7 +216,6 @@ main {
 }
 .tour-main-title {
     position: relative;
-    op: 75px;
     left: 240px;
     width: 650px;
     margin: 0;
@@ -239,7 +238,7 @@ main {
 }
 .virtual-tour {
     position: relative;
-    top: 103px;
+    top: 100px;
     width: 1440px;
     height: 923px;
     margin: auto;
@@ -258,7 +257,7 @@ main {
 }
 .tour-item-text {
     position: relative;
-    top: 25px;
+    top: 20px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -274,12 +273,15 @@ main {
     margin: 0;
     color: #000;
     font-family: Forum;
-    font-size: 30px;
+    font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    letter-spacing: 4px;
+    letter-spacing: 5px;
     text-transform: uppercase;
+}
+.tour-title-little {
+    font-size: 18px;
 }
 .tour-line {
     right: 140px;
