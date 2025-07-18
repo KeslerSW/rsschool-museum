@@ -1,1 +1,1 @@
-https://KeslerSW.github.io/rsschool-museum/museum
+https://KeslerSW.github.io/rsschool-museum/
