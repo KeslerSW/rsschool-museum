@@ -144,7 +144,7 @@ main {
     height: 750px;
     /*background-size: cover;
     background-image: url(/assets/img/welcome-slider/1.png);*/
-    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(https://github.com/KeslerSW/rsschool-museum/blob/gh-pages/assets/img/welcome-slider/1.png) lightgray 50% / cover;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(https://github.com/KeslerSW/rsschool-museum/blob/gh-pages/assets/img/welcome-slider/1.png?raw=true) lightgray 50% / cover;
 }
 .welcome-slider-nav {
     position: absolute;
