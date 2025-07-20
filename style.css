@@ -1,8 +1,9 @@
 html {
     scroll-behavior: smooth;
+    background-color: #030303;
 }
 body {
-    max-width: 1920px;
+    width: 1920px;
     margin: auto;
 }
 main {
@@ -149,7 +150,7 @@ main {
     height: 750px;
     /*background-size: cover;
     background-image: url(/assets/img/welcome-slider/1.png);*/
-    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(https://raw.githubusercontent.com/KeslerSW/rsschool-museum/refs/heads/gh-pages/assets/img/welcome-slider/1.png) lightgray 50% / cover;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(https://raw.githubusercontent.com/KeslerSW/rsschool-museum/refs/heads/gh-pages/assets/img/welcome-slider/1.jpg) lightgray 50% / cover;
 }
 .welcome-slider-nav {
     position: absolute;
@@ -291,4 +292,10 @@ main {
     width: 300px;
     height: 2px;
     background-color: #710707;
+}
+
+
+.in-progress {
+    font-size: 40px;
+    color: #fa0303;
 }
