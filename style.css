@@ -174,7 +174,7 @@ h2 {
     height: 750px;
     /*background-size: cover;
     background-image: url(/assets/img/welcome-slider/1.png);*/
-    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(../assets/img/welcome-slider/1.jpg) lightgray 50% / cover;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(./assets/img/welcome-slider/1.jpg) lightgray 50% / cover;
 }
 .welcome-slider-nav {
     position: absolute;
@@ -392,7 +392,7 @@ h2 {
     margin: 15px 0 0 0;
     width: 720px;
     height: 700px;
-    background-image: url(../assets/img/explore-slider/before.jpg);
+    background-image: url(./assets/img/explore-slider/before.jpg);
 }
 .picture-explore-slider {
     position: relative;
@@ -400,7 +400,7 @@ h2 {
     left: 1141px;
     width: 39px;
     height: 700px;
-    background-image: url(../assets/img/explore-slider/explore%20slider.png);
+    background-image: url(./assets/img/explore-slider/explore%20slider.png);
 }
 .video {
     position: relative;
@@ -450,7 +450,7 @@ h2 {
     right: 610px;
     width: 220px;
     height: 220px;
-    background-image: url(../assets/img/svg/video_frame.svg);
+    background-image: url(./assets/img/svg/video_frame.svg);
 }
 .player-control {
     width: 1440px;
