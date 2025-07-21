@@ -1,22 +1,16 @@
+* {
+    box-sizing: border-box;
+}
 html {
     scroll-behavior: smooth;
-    background-color: #030303;
 }
 body {
-    width: 1920px;
+    /*width: 1920px;*/
     margin: auto;
 }
 main {
     position: relative;
-    top: 118px;
-    width: 1920px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    align-content: flex-start;
-    justify-items: left;
-    gap: 75px;
-    background-color: #ffffff;
+    width: 100%;
 }
 h1 {
     margin: 0;
@@ -28,20 +22,30 @@ h1 {
     letter-spacing: 5px;
     text-transform: uppercase;
 }
+h2 {
+    margin: 0;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
 .header {
-    position: absolute;
-    top: 0;
-    z-index: 2;
-    width: 1920px;
-    height: 150px;
-    margin: auto;
     background-color: #030303;
 }
 .header-cont {
     position: relative;
+    top: 0;
+    width: 1440px;
+    height: 120px;
+    margin: auto;
+    background-color: #030303;
+}
+.header-text {
+    position: relative;
     top: 62px;
-    left: 240px;
-    right: 240px;
     height: 26px;
     max-width: 1440px;
     display: flex;
@@ -69,6 +73,13 @@ h1 {
     line-height: normal;
     letter-spacing: 2px;
 }
+.nav-item:hover {
+    color: #9D8665;
+    transition: 0.5s;
+}
+.nav-item:active {
+    color: #7E6C51;
+}
 .logo {
     display: flex;
     flex-direction: row;
@@ -85,16 +96,23 @@ h1 {
     letter-spacing: 5px;
     text-transform: uppercase;
 }
-.welcome-page {
+.welcome {
+    position: relative;
     width: 100%;
     height: 842px;
     background-color: #030303;
+    margin-bottom: 75px;
+}
+.welcome-page {
+    position: relative;
+    width: 1440px;
+    height: 842px;
+    margin: auto;
 }
 .welcome-main-text {
     z-index: 1;
     position: absolute;
     top: 182px;
-    left: 240px;
     width: 700px;
     height: 180px;
     margin: 0;
@@ -106,7 +124,6 @@ h1 {
     z-index: 1;
     position: absolute;
     top: 387px;
-    left: 240px;
     color: #FFF;
     font-family: Roboto;
     font-size: 28px;
@@ -118,7 +135,6 @@ h1 {
 .welcome-button {
     position: absolute;
     top: 495px;
-    left: 240px;
     display: flex;
     width: 360px;
     height: 75px;
@@ -127,12 +143,16 @@ h1 {
     border-radius: 10px;
     background: #710707;
 }
+.welcome-button:hover {
+    background-color: #9D8665;
+    transition: 0.5s;
+}
 .link {
     text-decoration: none;
 }
 .welcome-button-text {
     display: flex;
-    width: 232px;
+    width: 360px;
     height: 75px;
     flex-direction: column;
     justify-content: center;
@@ -149,17 +169,17 @@ h1 {
 .welcome-slider {
     position: absolute;
     top: 32px;
-    left: 680px;
+    left: 440px;
     width: 1000px;
     height: 750px;
     /*background-size: cover;
     background-image: url(/assets/img/welcome-slider/1.png);*/
-    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(https://raw.githubusercontent.com/KeslerSW/rsschool-museum/refs/heads/gh-pages/assets/img/welcome-slider/1.jpg) lightgray 50% / cover;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(../assets/img/welcome-slider/1.jpg) lightgray 50% / cover;
 }
 .welcome-slider-nav {
     position: absolute;
     top: 722px;
-    left: 1080px;
+    left: 840px;
     width: 600px;
     height: 120px;
     background-color: #030303;
@@ -193,8 +213,12 @@ h1 {
 .slider-squares {
     width: 16px;
     height: 16px;
+    cursor: pointer;
     background-size: cover;
     background-color: #ffffff;
+}
+.slider-squares-active {
+    background-color: #7E6C51;
 }
 .slider-squares:hover {
     width: 16px;
@@ -212,22 +236,29 @@ h1 {
     justify-content: space-between;
     align-items: center;
 }
+.slider-arrows-item {
+    cursor: pointer;
+}
+.slider-arrows-item .left-arrow {
+    fill: #ffffff;
+}
 .reverse {
     transform: rotate(180deg);
 }
-.slider-arrows:hover {
-fill: #9D8665;
+.slider-arrows-item .left-arrow:hover {
+    fill: #9D8665;
+}
+.visiting {
+    background-color: #ffffff;
 }
 .tour {
     position: relative;
-    width: 100%;
+    width: 1440px;
     height: 1116px;
-    background-size: cover;
-    background-color: #ffffff;
+    margin: 75px auto;
 }
 .tour-main-title {
     position: relative;
-    left: 240px;
     width: 650px;
     color: #9D8665;
 }
@@ -292,9 +323,12 @@ fill: #9D8665;
     height: 2px;
     background-color: #710707;
 }
+.explore {
+    background-color: #030303;
+}
 .picture-explore {
     position: relative;
-    width: 100%;
+    width: 1440px;
     height: 865px;
     display: flex;
     margin: auto;
@@ -306,7 +340,7 @@ fill: #9D8665;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: 75px 240px;
+    margin: 75px 0;
     gap: 60px;
 }
 .picture-explore-text {
@@ -358,15 +392,22 @@ fill: #9D8665;
     margin: 15px 0 0 0;
     width: 720px;
     height: 700px;
-    background-image: url(https://raw.githubusercontent.com/KeslerSW/rsschool-museum/refs/heads/gh-pages/assets/img/explore-slider/before.jpg);
+    background-image: url(../assets/img/explore-slider/before.jpg);
 }
 .picture-explore-slider {
     position: relative;
     top: 90px;
-    left: 1381px;
+    left: 1141px;
     width: 39px;
     height: 700px;
-    background-image: url(https://raw.githubusercontent.com/KeslerSW/rsschool-museum/refs/heads/gh-pages/assets/img/explore-slider/explore%20slider.png);
+    background-image: url(../assets/img/explore-slider/explore%20slider.png);
+}
+.video {
+    position: relative;
+    width: 100%;
+    height: 1246px;
+    background-color: #ffffff;
+    margin: 75px 0;
 }
 .video-journey {
     position: relative;
@@ -409,7 +450,7 @@ fill: #9D8665;
     right: 610px;
     width: 220px;
     height: 220px;
-    background-image: url(https://raw.githubusercontent.com/KeslerSW/rsschool-museum/78cb707cb49a7759e0239e5a9ae1982c35abf285/assets/img/svg/video_frame.svg);
+    background-image: url(../assets/img/svg/video_frame.svg);
 }
 .player-control {
     width: 1440px;
@@ -437,16 +478,24 @@ fill: #9D8665;
     align-items: center;
 }
 .circle {
-    fill: #fa0303;
+    width: 12px;
+    height: 12px;
+    border-radius: 100%;
+    cursor: pointer;
+    background-color: #999999;
+}
+.circle-active {
+    background-color: #333333;
 }
 .circle:hover {
+    background-color: #710707;
+}
+.video-arrow {
+    fill: #999999;
+    cursor: pointer;
+}
+.video-arrow:hover {
     fill: #710707;
 }
 
 
-.in-progress {
-    position: relative;
-    left: 800px;
-    font-size: 40px;
-    color: #fa0303;
-}

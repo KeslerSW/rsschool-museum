@@ -1,19 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Creator: CorelDRAW -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="2.646mm" height="3.174mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
-viewBox="0 0 264.6 317.4"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- xmlns:xodm="http://www.corel.com/coreldraw/odm/2003">
- <defs>
-  <style type="text/css">
-   <![CDATA[
-    .fil0 {fill:#999999}
-   ]]>
-  </style>
- </defs>
- <g id="Слой_x0020_1">
-  <metadata id="CorelCorpID_0Corel-Layer"/>
-  <path class="fil0" d="M141.76 7.9c10.58,9.13 12.3,25.78 3.83,37.19l-85.9 115.76 85.9 115.76c8.47,11.41 6.75,28.06 -3.83,37.19 -4.19,3.61 -9.15,5.51 -14.13,5.77l-2.35 0c-6.8,-0.34 -13.43,-3.72 -18.02,-9.9l-110.43 -148.82 110.43 -148.82c4.37,-5.88 10.59,-9.22 17.04,-9.83l4.22 0c4.68,0.43 9.3,2.3 13.24,5.7zm92.98 -5.7l4.23 0c4.68,0.43 9.29,2.3 13.23,5.7 5.87,5.06 9.01,12.44 9.2,19.96l0 1.59c-0.17,5.51 -1.93,11.01 -5.37,15.64l-85.9 115.76 85.9 115.76c3.44,4.64 5.2,10.14 5.37,15.64l0 1.6c-0.19,7.52 -3.33,14.89 -9.2,19.95 -4.19,3.61 -9.14,5.51 -14.12,5.77l-2.36 0c-6.8,-0.34 -13.43,-3.72 -18.02,-9.9l-110.43 -148.82 110.43 -148.82c4.37,-5.88 10.59,-9.22 17.04,-9.83z"/>
- </g>
+<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="10" height="12" fill="#E5E5E5"/>
+<path id="Vector (Stroke)" fill-rule="evenodd" clip-rule="evenodd" d="M5.4777 0.219168C5.87773 0.564178 5.94259 1.19347 5.62256 1.62473L2.37578 6.00004L5.62256 10.3753C5.94259 10.8066 5.87773 11.4359 5.4777 11.7809C5.07766 12.1259 4.49394 12.056 4.17391 11.6247L0 6.00004L4.17391 0.375342C4.49394 -0.0559202 5.07766 -0.125842 5.4777 0.219168ZM9.65184 0.219168C10.0519 0.564178 10.1167 1.19347 9.7967 1.62473L6.54992 6.00004L9.7967 10.3753C10.1167 10.8066 10.0519 11.4359 9.65184 11.7809C9.2518 12.1259 8.66808 12.056 8.34806 11.6247L4.17414 6.00004L8.34806 0.375342C8.66808 -0.0559202 9.2518 -0.125842 9.65184 0.219168Z" fill="#999999"/>
 </svg>
