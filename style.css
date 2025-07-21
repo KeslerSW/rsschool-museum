@@ -437,7 +437,7 @@ fill: #9D8665;
     align-items: center;
 }
 .circle {
-
+    fill: #fa0303;
 }
 .circle:hover {
     fill: #710707;
