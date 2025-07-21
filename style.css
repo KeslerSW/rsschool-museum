@@ -358,7 +358,7 @@ fill: #9D8665;
     margin: 15px 0 0 0;
     width: 720px;
     height: 700px;
-    background-image: url(/assets/img/explore-slider/before.jpg);
+    background-image: url(https://raw.githubusercontent.com/KeslerSW/rsschool-museum/refs/heads/gh-pages/assets/img/explore-slider/before.jpg);
 }
 .picture-explore-slider {
     position: relative;
@@ -366,7 +366,7 @@ fill: #9D8665;
     left: 1381px;
     width: 39px;
     height: 700px;
-    background-image: url(/assets/img/explore-slider/explore\ slider.png);
+    background-image: url(https://raw.githubusercontent.com/KeslerSW/rsschool-museum/refs/heads/gh-pages/assets/img/explore-slider/explore%20slider.png);
 }
 .video-journey {
     position: relative;
@@ -409,7 +409,7 @@ fill: #9D8665;
     right: 610px;
     width: 220px;
     height: 220px;
-    background-image: url(/assets/img/svg/video_frame.svg);
+    background-image: url(https://raw.githubusercontent.com/KeslerSW/rsschool-museum/78cb707cb49a7759e0239e5a9ae1982c35abf285/assets/img/svg/video_frame.svg);
 }
 .player-control {
     width: 1440px;
