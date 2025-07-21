@@ -18,6 +18,16 @@ main {
     gap: 75px;
     background-color: #ffffff;
 }
+h1 {
+    margin: 0;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
 .header {
     position: fixed;
     top: 0;
@@ -91,13 +101,6 @@ main {
     display: flex;
     flex-direction: column;
     color: #FFF;
-    font-family: Forum;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 90px; /* 90 , 112.5% */
-    letter-spacing: 5px;
-    text-transform: uppercase;
 }
 .welcome-text {
     z-index: 1;
@@ -209,8 +212,11 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-.arrow-reverse {
+.reverse {
     transform: rotate(180deg);
+}
+.slider-arrows:hover {
+fill: #9D8665;
 }
 .tour {
     position: relative;
@@ -223,15 +229,7 @@ main {
     position: relative;
     left: 240px;
     width: 650px;
-    margin: 0;
     color: #9D8665;
-    font-family: Forum;
-    font-size: 80px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 90px; /* 112.5% */
-    letter-spacing: 5px;
-    text-transform: uppercase;
 }
 .tour-main-line {
     margin: auto;
@@ -294,9 +292,160 @@ main {
     height: 2px;
     background-color: #710707;
 }
+.picture-explore {
+    position: relative;
+    width: 100%;
+    height: 865px;
+    display: flex;
+    margin: auto;
+    background-color: #030303;
+}
+.picture-explore-content {
+    width: 1440px;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 75px 240px;
+    gap: 60px;
+}
+.picture-explore-text {
+    width: 660px;
+    position: relative;
+    display: flex;
+}
+.picture-explore-text-cont {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 25px;
+}
+.picture-explore-title {
+    margin: 0;
+    color: #FFF;
+    font-family: Forum;
+    font-size: 80px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 90px; /* 112.5% */
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.picture-explore-line {
+    width: 100%;
+    height: 3px;
+    background-color: #710707;
+}
+.regular-text {
+    margin: 0;
+    color: #FFF;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 38.5px; /* 175% */
+}
+.black {
+    color: #000000;
+}
+.allocation-text {
+    color: #CAAA7D;
+}
+.picture-explore-text-space {
+    height: 25px;
+}
+.picture-explore-img {
+    margin: 15px 0 0 0;
+    width: 720px;
+    height: 700px;
+    background-image: url(/assets/img/explore-slider/before.jpg);
+}
+.picture-explore-slider {
+    position: relative;
+    top: 90px;
+    left: 1381px;
+    width: 39px;
+    height: 700px;
+    background-image: url(/assets/img/explore-slider/explore\ slider.png);
+}
+.video-journey {
+    position: relative;
+    width: 1440px;
+    height: 1246px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    align-items: center;
+}
+.video-journey-text {
+    width: 100%;;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 110px;
+}
+.video-journey-title {
+    width: 610px;
+    color: #9D8665;
+}
+.video-journey-regular-text {
+    width: 700px;
+}
+.player {
+    display: flex;
+    flex-direction: column;
+    margin: 75px 0 0 0;
+}
+.player-video {
+    position: relative;
+    width: 1440px;
+    height: 650px;
+    background-color: #000;
+}
+.player-video-triangle {
+    position: absolute;
+    top: 380px;
+    right: 610px;
+    width: 220px;
+    height: 220px;
+    background-image: url(/assets/img/svg/video_frame.svg);
+}
+.player-control {
+    width: 1440px;
+    height: 85px;
+    background-color: #000000;
+}
+.video-journey-videos {
+    margin: 40px 0 0 0;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 42px;
+}
+.video-item {
+    width: 452px;
+    height: 254px;
+}
+.video-slider {
+    margin: 40px 0 0 0;
+    width: 200px;
+    height: 12px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.circle {
+
+}
+.circle:hover {
+    fill: #710707;
+}
 
 
 .in-progress {
+    position: relative;
+    left: 800px;
     font-size: 40px;
     color: #fa0303;
 }
