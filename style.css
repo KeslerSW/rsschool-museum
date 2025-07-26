@@ -5,16 +5,18 @@ html {
     scroll-behavior: smooth;
 }
 body {
-    /*width: 1920px;*/
     margin: auto;
 }
 main {
     position: relative;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 75px;
 }
 h1 {
     margin: 0;
-    font-family: Forum;
+    font-family: 'Forum';
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
@@ -24,7 +26,7 @@ h1 {
 }
 h2 {
     margin: 0;
-    font-family: Forum;
+    font-family: 'Forum';
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
@@ -38,6 +40,7 @@ h2 {
 .header-cont {
     position: relative;
     top: 0;
+    display: flex;
     width: 1440px;
     height: 120px;
     margin: auto;
@@ -45,9 +48,9 @@ h2 {
 }
 .header-text {
     position: relative;
-    top: 62px;
     height: 26px;
-    max-width: 1440px;
+    width: 100%;
+    margin: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -96,18 +99,43 @@ h2 {
     letter-spacing: 5px;
     text-transform: uppercase;
 }
+.hamburger-button {
+    display: none;
+}
 .welcome {
     position: relative;
     width: 100%;
     height: 842px;
     background-color: #030303;
-    margin-bottom: 75px;
 }
+/*@media (min-width: 1025px) {
+    .welcome {
+        height: 842px;
+    }
+    .welcome-page {
+        width: 1440px;
+        height: 842px;
+    }
+    .tour {
+        width: 1440px;
+        height: 1116px;
+    }
+    .virtual-tour {
+        width: 1440px;
+        height: 923px;
+    }
+    .welcome-slider-img {
+        width: 1000px;
+        height: 750px;
+    }
+}*/
+
 .welcome-page {
     position: relative;
     width: 1440px;
     height: 842px;
     margin: auto;
+    background-color: #030303;
 }
 .welcome-main-text {
     z-index: 1;
@@ -125,7 +153,7 @@ h2 {
     position: absolute;
     top: 387px;
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 28px;
     font-style: normal;
     font-weight: 300;
@@ -134,6 +162,7 @@ h2 {
 }
 .welcome-button {
     position: absolute;
+    z-index: 1;
     top: 495px;
     display: flex;
     width: 360px;
@@ -152,14 +181,14 @@ h2 {
 }
 .welcome-button-text {
     display: flex;
-    width: 360px;
-    height: 75px;
+    width: 100%;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     flex-shrink: 0;
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
@@ -168,6 +197,8 @@ h2 {
 }
 .welcome-slider {
     position: absolute;
+    width: 1000px;
+    height: 754px;
     top: 32px;
     left: 440px;
     overflow-x: scroll;
@@ -176,36 +207,20 @@ h2 {
 }
 .welcome-slider-img {
     display: flex;
-    width: 1000px;
-    height: 750px;
-    /*background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(./assets/img/welcome-slider/1.jpg) lightgray 50% / cover;*/
 }
-.welcome-slider-img-item {
+.slider-img::after {
+    content: "";
     position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    display: inline-block;
-    scroll-snap-align: center;
+    background: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%);
 }
-.welcome-slider-img-item:nth-child(1) {
-    margin-left: 0;
-    background:linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(assets/img/welcome-slider/1.jpg);
-}
-.welcome-slider-img-item:nth-child(2) {
-    margin-left: 1000px;
-    background-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(assets/img/welcome-slider/2.jpg);
-}
-.welcome-slider-img-item:nth-child(3) {
-    margin-left: 2000px;
-    background-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(assets/img/welcome-slider/3.jpg);
-}
-.welcome-slider-img-item:nth-child(4) {
-    margin-left: 3000px;
-    background-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(assets/img/welcome-slider/4.jpg);
-}
-.welcome-slider-img-item:nth-child(5) {
-    margin-left: 4000px;
-    background-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, 0.50) 16.19%, rgba(0, 0, 0, 0.00) 30.73%), url(assets/img/welcome-slider/5.jpg);
+.slider-img {
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 .welcome-slider-nav {
     position: absolute;
@@ -286,7 +301,7 @@ h2 {
     position: relative;
     width: 1440px;
     height: 1116px;
-    margin: 75px auto;
+    margin: 0 auto;
 }
 .tour-main-title {
     position: relative;
@@ -317,7 +332,12 @@ h2 {
     top: 0;
     left: 0;
     height: 424px;
-
+}
+.tour-item:hover {
+    .tour-line {
+        width: 100%;
+        transition: 0.5s;
+    }
 }
 .tour-item-text {
     position: relative;
@@ -336,13 +356,16 @@ h2 {
 .tour-title {
     margin: 0;
     color: #000;
-    font-family: Forum;
+    font-family: 'Forum';
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
     line-height: normal;
     letter-spacing: 5px;
     text-transform: uppercase;
+}
+.tour-title-medium {
+    font-size: 22px;
 }
 .tour-title-little {
     font-size: 18px;
@@ -362,10 +385,9 @@ h2 {
     height: 865px;
     display: flex;
     margin: auto;
-    background-color: #030303;
 }
 .picture-explore-content {
-    width: 1440px;
+    width: 100%;
     position: absolute;
     display: flex;
     flex-direction: row;
@@ -377,17 +399,19 @@ h2 {
     width: 660px;
     position: relative;
     display: flex;
+    flex-direction: column;
 }
 .picture-explore-text-cont {
     display: flex;
     flex-direction: column;
     align-content: space-between;
+    margin-top: 50px;
     gap: 25px;
 }
 .picture-explore-title {
     margin: 0;
     color: #FFF;
-    font-family: Forum;
+    font-family: 'Forum';
     font-size: 80px;
     font-style: normal;
     font-weight: 400;
@@ -396,6 +420,8 @@ h2 {
     text-transform: uppercase;
 }
 .picture-explore-line {
+    position: relative;
+    top: 23px;
     width: 100%;
     height: 3px;
     background-color: #710707;
@@ -403,7 +429,7 @@ h2 {
 .regular-text {
     margin: 0;
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
@@ -422,7 +448,7 @@ h2 {
     margin: 15px 0 0 0;
     width: 720px;
     height: 700px;
-    background-image: url(./assets/img/explore-slider/before.jpg);
+    background-image: url(assets/img/explore-slider/before.jpg);
 }
 .picture-explore-slider {
     position: relative;
@@ -430,14 +456,13 @@ h2 {
     left: 1141px;
     width: 39px;
     height: 700px;
-    background-image: url(./assets/img/explore-slider/explore%20slider.png);
+    background-image: url(assets/img/explore-slider/explore%20slider.png);
 }
 .video {
     position: relative;
     width: 100%;
     height: 1246px;
     background-color: #ffffff;
-    margin: 75px 0;
 }
 .video-journey {
     position: relative;
@@ -576,7 +601,6 @@ h2 {
     position: relative;
     width: 100%;
     height: 743px;
-    margin: 75px 0;
     background-color: #ffffff;
 }
 .tickets-page {
@@ -664,7 +688,7 @@ h2 {
 .amount-button-text {
     color: #000;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 32px;
     font-style: normal;
     font-weight: 400;
@@ -683,7 +707,7 @@ h2 {
     justify-content: center;
     color: #FFF;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 22px;
     font-style: normal;
     font-weight: 300;
@@ -706,7 +730,7 @@ h2 {
     position: relative;
     width: 100%;
     height: 813px;
-    margin: 75px 0;
+    margin: 0 0 74px 0;
     background-color: #ffffff;
 }
 .contacts-page {
@@ -801,10 +825,173 @@ footer {
     justify-content: space-between;
     top: 190px;
     color: #FFF;
-    font-family: Roboto;
+    font-family: 'Roboto';
     font-size: 22px;
     font-style: normal;
     font-weight: 200;
     line-height: 22px; /* 100% */
     letter-spacing: 2px;
+}
+@media (max-width: 1024px) {
+        main {
+        gap: 60px;
+    }
+    h1 {
+        font-size: 50px;
+        line-height: 90px; /* 180% */
+    }
+    h2 {
+        font-size: 50px;
+        line-height: 75px; /* 150% */
+    }
+    .header-cont {
+        width: 984px;
+        height: 130px;
+    }
+    .nav-list {
+        display: none;
+    }
+    .hamburger-button {
+        display: block;
+        width: 35px;
+        height: 20px;
+        border: none;
+        background-color: #000;
+        background-size: cover;
+        background-image: url(assets/img/svg/hamburger\ 32x18.svg);
+    }
+    .welcome {
+        height: 585px;
+    }
+    .welcome-page {
+        width: 984px;
+        height: 585px;
+    }
+    .welcome-text {
+        top: 255px;
+        font-size: 24px;
+    }
+    .welcome-main-text {
+        top: 50px;
+        width: 700px;
+        height: 180px;
+    }
+    .welcome-button {
+        z-index: 1;
+        top: 333px;
+        width: 300px;
+        height: 60px;
+    }
+    .link {
+        text-decoration: none;
+    }
+    .welcome-button-text {
+        font-size: 20px;
+    }
+    .welcome-slider-img {
+        width: 700px;
+        height: 525px;
+    }
+    .welcome-img-size {
+        width: 700px;
+        height: 525px;
+    }
+    .welcome-slider {
+        width: 700px;
+        height: 525px;
+        top: 0px;
+        left: 284px;
+    }
+    .welcome-slider-nav {
+        top: 465px;
+        left: 284px;
+        width: 700px;
+        height: 120px;
+    }
+    .tour {
+        width: 984px;
+        height: 1313px;
+    }
+    .virtual-tour {
+        top: 83px;
+        width: 768px;
+        height: 1155px;
+    }
+    .tour-img {
+        width: 330px;
+        height: 215px;
+    }
+    .tour-item {
+        position: relative;
+        top: 0;
+        left: 0;
+        height: 345px;
+    }
+    .tour-title {
+        font-size: 28px;
+        letter-spacing: 3px;
+    }
+    .tour-title-medium {
+        font-size: 20px;
+    }
+    .tour-title-little {
+        font-size: 16px;
+    }
+    .main-line {
+        top: 20px;
+        width: 984px;
+    }
+    .tour-line {
+        width: 150px;
+        height: 2px;
+    }
+    .picture-explore {
+        width: 984px;
+        height: 1029px;
+        margin: 60px 0;
+    }
+    .picture-explore-content {
+        position: relative;
+        width: 100%;
+        margin: 0 20px;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 55px;
+    }
+    .picture-explore-text {
+        width: 984px;
+        position: relative;
+        display: flex;
+    }
+    .picture-explore-text-cont {
+        width: 100%;
+        margin-top: 80px;
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .text-none {
+        display: none;
+    }
+    .picture-explore-title {
+        font-size: 50px;
+        line-height: 75px; /* 150% */
+    }
+    .regular-text {
+        font-size: 20px;
+        line-height: 38.5px; /* 192.5% */
+    }
+    .picture-explore-text-space {
+        display: none;
+    }
+    .picture-explore-img {
+        margin: 0 auto;
+        width: 720px;
+        height: 700px;
+    }
+    .picture-explore-slider {
+        position: absolute;
+        top: 330px;
+        left: 570px;
+    }
 }
