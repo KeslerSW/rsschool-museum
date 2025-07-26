@@ -67,22 +67,22 @@
                             <span>05</span>
                         </div>
                         <div class="welcome-slider-squares">
-                            <div class="slider-squares slider-squares-active"></div>
-                            <div class="slider-squares"></div>
-                            <div class="slider-squares"></div>
-                            <div class="slider-squares"></div>
-                            <div class="slider-squares"></div>
+                            <button class="slider-squares slider-squares-active"></button>
+                            <button class="slider-squares"></button>
+                            <button class="slider-squares"></button>
+                            <button class="slider-squares"></button>
+                            <button class="slider-squares"></button>
                         </div>
                         <div class="slider-arrows">
                             <div class="slider-arrows-item">
-                                <svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
+                                <button class="slider-arrows-button"><svg class="left-arrow" xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
                                     <path d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"/>
-                                </svg>
+                                </svg></button>
                             </div>
                             <div class="slider-arrows-item">
-                                <svg class="left-arrow reverse" xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
+                                <button class="slider-arrows-button"><svg class="left-arrow reverse" xmlns="http://www.w3.org/2000/svg" width="30" height="8" viewBox="0 0 30 8">
                                     <path d="M5.72254 8C3.90173 6.31339 1.99422 5.08262 0 4.30769V3.69231C1.99422 2.89459 3.90173 1.66382 5.72254 0H7.23988C6.37283 1.4359 5.53468 2.52991 4.72543 3.28205H30V4.71795H4.72543C5.53468 5.47009 6.37283 6.5641 7.23988 8H5.72254Z"/>
-                                </svg>
+                                </svg></button>
                             </div>
                         </div>
                     </div>
@@ -185,7 +185,7 @@
             <div class="video-journey" id="video">
                 <div class="video-journey-text">
                     <h2 class="video-journey-title">Video journey</h2>
-                    <p class="regular-text black video-journey-regular-text">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
+                    <p class="regular-text black video-journey-regular-text text-none">Enter and visit one of the most famous museums in the world and enjoy masterpieces such as Mona Lisa or Hammurabi's Code</p>
                 </div>
                 <div class="player">
                     <video class="player-video" controls src="assets/video/video0.mp4" poster="assets/video/poster0.jpg"></video>
@@ -221,22 +221,22 @@
                 <h2 class="gallery-main-title">Art Gallery</h2>
                 <div class="gallery-images-cont">
                     <div class="gallery-images-column-side">
-                        <img src="assets/img/galery/galery2.jpg" alt="">
-                        <img src="assets/img/galery/galery9.jpg" alt="">
-                        <img src="assets/img/galery/galery4.jpg" alt="">
-                        <img src="assets/img/galery/galery6.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery2.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery9.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery4.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery6.jpg" alt="">
                     </div>
                     <div class="gallery-images-column">
-                        <img src="assets/img/galery/galery1.jpg" alt="">
-                        <img src="assets/img/galery/galery8.jpg" alt="">
-                        <img src="assets/img/galery/galery3.jpg" alt="">
-                        <img src="assets/img/galery/galery5.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery1.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery8.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery3.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery5.jpg" alt="">
                     </div>
                     <div class="gallery-images-column-side">
-                        <img src="assets/img/galery/galery7.jpg" alt="">
-                        <img src="assets/img/galery/galery10.jpg" alt="">
-                        <img src="assets/img/galery/galery15.jpg" alt="">
-                        <img src="assets/img/galery/galery12.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery7.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery10.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery15.jpg" alt="">
+                        <img class="gallery-img-size" src="assets/img/galery/galery12.jpg" alt="">
                     </div>
                 </div>
                 <div class="gallery-shadow"></div>
@@ -247,7 +247,7 @@
                 <h2 class="tickets-title">Buy tickets</h2>
                 <div class="main-line"></div>
                 <div class="tickets-cont">
-                    <img class="tickets-img" src="assets/img/Rectangle.jpg" alt="">
+                    <img class="tickets-img" src="assets/img/Rectangle.jpg">
                     <div class="ticket-type">
                         <span class="ticket-large-text ticket-type-text">Ticket Type</span>
                         <span><input type="radio" id="Permanent_exhibition" name="ticket-type">
@@ -271,7 +271,7 @@
                             <input class="amount-input regular-text" type="number" readonly value="0">
                             <button class="amount-button amount-button-text">+</button>
                         </div>
-                        <div class="ticket-large-text total-text"><span>Total €</span><span>220</span></div>
+                        <div class="ticket-large-text total-text"><span>Total € </span><span>220</span></div>
                         <button class="buy-button">Buy Now</button>
                     </div>
                 </div>

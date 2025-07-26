@@ -257,6 +257,7 @@ h2 {
     justify-content: space-between;
 }
 .slider-squares {
+    border: none        ;
     width: 16px;
     height: 16px;
     cursor: pointer;
@@ -287,6 +288,10 @@ h2 {
 }
 .slider-arrows-item .left-arrow {
     fill: #ffffff;
+}
+.slider-arrows-button {
+    border: none;
+    background-color: transparent   ;
 }
 .reverse {
     transform: rotate(180deg);
@@ -461,7 +466,6 @@ h2 {
 .video {
     position: relative;
     width: 100%;
-    height: 1246px;
     background-color: #ffffff;
 }
 .video-journey {
@@ -587,7 +591,6 @@ h2 {
     top: 165px;
     display: flex;
     flex-direction: column;
-    width: 30%;
     gap: 24px;
 }
 .gallery-shadow {
@@ -729,7 +732,6 @@ h2 {
 .contacts {
     position: relative;
     width: 100%;
-    height: 813px;
     margin: 0 0 74px 0;
     background-color: #ffffff;
 }
@@ -747,7 +749,6 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    height: 620px;
     margin-top: 95px;
 }
 .contacts-text {
@@ -908,6 +909,53 @@ footer {
         width: 700px;
         height: 120px;
     }
+    .welcome-slider-numbers {
+        position: absolute;
+        top: 40px;
+        left: 223px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 10px;
+        color: #FFF;
+        font-family: Roboto;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px; /* 200% */
+        text-transform: uppercase;
+    }
+    .welcome-slider-squares {
+        position: absolute;
+        top: 54px;
+        left: 340px;
+        width: 160px;
+        height: 12px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .slider-squares {
+        border: none;
+        width: 12px;
+        height: 12px;
+        cursor: pointer;
+        background-size: cover;
+        background-color: #ffffff;
+    }
+    .slider-squares-active {
+        background-color: #7E6C51;
+    }
+    .slider-arrows {
+        position: absolute;
+        top: 55px;
+        right: 69px;
+        width: 95px;
+        height: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     .tour {
         width: 984px;
         height: 1313px;
@@ -993,5 +1041,165 @@ footer {
         position: absolute;
         top: 330px;
         left: 570px;
+    }
+    .video-journey {
+        margin: 0 auto;
+        width: 984px;
+        height: 881px;
+    }
+    .player-video {
+        position: relative;
+        width: 984px;
+        height: 444px;
+        background-color: #000;
+    }
+    .player {
+        display: flex;
+        flex-direction: column;
+        margin: 40px 0 0 0;
+    }
+    .player-control {
+        width: 984px;
+        height: 60px;
+    }
+    .video-journey-videos {
+        margin: 40px 0 0 0;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+        gap: 41px;
+    }
+    .video-item {
+        width: 300px;
+        height: 170px;
+    }
+    .gallery {
+        height: 1460px;
+    }
+    .art-gallery {
+        top: 60px;
+        width: 984px;
+    }
+    .gallery-main-title {
+        top: 0;
+    }
+    .gallery-images-column-side {
+        top: 110px;
+    }
+    .gallery-images-column {
+        top: 60px;
+    }
+    .gallery-img-size {
+        width: 304px;
+    }
+    .gallery-shadow {
+        position: absolute;
+        top: 1100px;
+        left: 0;
+        width: 1024px;
+        height: 239px;
+    }
+    .tickets {
+        position: relative;
+        width: 100%;
+        height: 598px;
+        background-color: #ffffff;
+    }
+    .tickets-page {
+        width: 984px;
+        margin: 0 20px;
+    }
+    .tickets-cont {
+        margin-top: 80px;
+    }
+    .tickets-img {
+        object-fit: cover;
+        width: 700px;
+        height: 440px;
+    }
+    .ticket-type {
+        display: none;
+    }
+    .ticket-text {
+        font-size: 22px;
+        line-height: normal;
+        margin-left: 0;
+        margin-top: 0px;
+    }
+    .amount-cont {
+        margin-left: 80px;
+        gap: 20px;
+    }
+    .amount-text {
+        text-align: start;
+        margin-bottom: 10px;
+    }
+    .amount-field {
+        width: 175px;
+        margin-top: -10px;
+        margin-left: 0;
+    }
+    .total-text {
+        display: flex;
+        justify-content: space-between;
+        text-align: start;
+        margin-top: 10px;
+    }
+    .buy-button {
+        margin-top: 50px;
+    }
+    .contacts {
+        margin: 0;
+    }
+    .contacts-page {
+        position: relative;
+        width: 984px;
+        margin: 0 auto;
+    }
+    .contacts-cont {
+        margin-top: 80px;
+        margin-bottom: 60px;
+    }
+    .contacts-map {
+        width: 694px;
+        height: 454px;
+    }
+    .contact-main-text {
+        font-size: 24px;
+        width: 200px;
+        margin-bottom: 25px;
+    }
+    .contact-regular-text {
+        margin-bottom: 0px;
+    }
+    footer {
+        height: 368px;
+    }
+    .footer-container {
+        top: 62px;
+        width: 984px;
+    }
+    .footer-nav-list {
+        top: 4px;
+        right: 4px;
+        width: 313px;
+        height: 128px;
+        gap:120px;
+        margin-left: 45px;
+    }
+    .footer-nav-list-column {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .socials {
+        margin-left: 92px;
+    }
+    .footer-line {
+        top: 120px;
+    }
+    .footer-end {
+        width: 984px;
+        top: 170px;
     }
 }
