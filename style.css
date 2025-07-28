@@ -721,6 +721,7 @@ h2 {
     margin-top: 60px;
 }
 .parallax {
+    margin: auto;
     width: 100%;
     height: 400px;
     background-image: url(assets/img/parallax.jpg);
@@ -834,6 +835,9 @@ footer {
     letter-spacing: 2px;
 }
 @media (max-width: 1024px) {
+    .element::-webkit-scrollbar {
+        display: none;
+    }
         main {
         gap: 60px;
     }
@@ -859,7 +863,12 @@ footer {
         border: none;
         background-color: #000;
         background-size: cover;
-        background-image: url(assets/img/svg/hamburger\ 32x18.svg);
+        background-image: url(assets/img/svg/hamburger_32x18.svg);
+    }
+    .hamburger-button:active {
+        width: 25px;
+        height: 25px;
+        background-image: url(assets/img/svg/hamburger_close_32x18.svg);
     }
     .welcome {
         height: 585px;
@@ -957,6 +966,7 @@ footer {
         align-items: center;
     }
     .tour {
+        margin: auto;
         width: 984px;
         height: 1313px;
     }
@@ -994,6 +1004,7 @@ footer {
         height: 2px;
     }
     .picture-explore {
+        margin: auto;
         width: 984px;
         height: 1029px;
         margin: 60px 0;
@@ -1043,7 +1054,7 @@ footer {
         left: 570px;
     }
     .video-journey {
-        margin: 0 auto;
+        margin: auto;
         width: 984px;
         height: 881px;
     }
@@ -1074,9 +1085,11 @@ footer {
         height: 170px;
     }
     .gallery {
+        margin: auto;
         height: 1460px;
     }
     .art-gallery {
+        position: relative;
         top: 60px;
         width: 984px;
     }
@@ -1100,7 +1113,7 @@ footer {
         height: 239px;
     }
     .tickets {
-        position: relative;
+        margin: auto;
         width: 100%;
         height: 598px;
         background-color: #ffffff;
@@ -1149,7 +1162,7 @@ footer {
         margin-top: 50px;
     }
     .contacts {
-        margin: 0;
+        margin: auto;
     }
     .contacts-page {
         position: relative;
@@ -1173,6 +1186,7 @@ footer {
         margin-bottom: 0px;
     }
     footer {
+        margin: auto;
         height: 368px;
     }
     .footer-container {
