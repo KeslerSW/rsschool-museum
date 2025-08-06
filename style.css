@@ -10,6 +10,7 @@ body {
 main {
     position: relative;
     width: 100%;
+    margin: auto;
     display: flex;
     flex-flow: column nowrap;
     gap: 75px;
@@ -35,13 +36,14 @@ h2 {
     text-transform: uppercase;
 }
 .header {
+    width: 100%;
     background-color: #030303;
 }
 .header-cont {
     position: relative;
-    top: 0;
+    top: 20px;
     display: flex;
-    width: 1440px;
+    max-width: 1440px;
     height: 120px;
     margin: auto;
     background-color: #030303;
@@ -55,7 +57,6 @@ h2 {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    gap: 466px;
 }
 .nav-list {
     margin: 0;
@@ -148,7 +149,7 @@ h2 {
 
 .welcome-page {
     position: relative;
-    width: 1440px;
+    max-width: 1440px;
     height: 842px;
     margin: auto;
     background-color: #030303;
@@ -216,7 +217,7 @@ h2 {
     width: 1000px;
     height: 754px;
     top: 32px;
-    left: 440px;
+    right: 0px;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
     overflow: hidden;
@@ -241,7 +242,7 @@ h2 {
 .welcome-slider-nav {
     position: absolute;
     top: 722px;
-    left: 840px;
+    right: 0px;
     width: 600px;
     height: 120px;
     background-color: #030303;
@@ -320,8 +321,7 @@ h2 {
 }
 .tour {
     position: relative;
-    width: 1440px;
-    height: 1116px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .tour-main-title {
@@ -332,16 +332,15 @@ h2 {
 .main-line {
     position: relative;
     top: 25px;
-    width: 1440px;
+    max-width: 100%;
     height: 3px;
     background-color: #710707;
 }
 .virtual-tour {
     position: relative;
-    top: 100px;
-    width: 1440px;
-    height: 923px;
-    margin: auto;
+    top: 25px;
+    max-width: 1440px;
+    margin-bottom: 28px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
@@ -350,9 +349,8 @@ h2 {
 }
 .tour-item {
     position: relative;
-    top: 0;
-    left: 0;
     height: 424px;
+    margin-top: 75px;
 }
 .tour-item:hover {
     .tour-line {
@@ -402,27 +400,27 @@ h2 {
 }
 .picture-explore {
     position: relative;
-    width: 1440px;
-    height: 865px;
+    max-width: 1440px;
     display: flex;
     margin: auto;
 }
 .picture-explore-content {
     width: 100%;
-    position: absolute;
+    position: relative;
     display: flex;
-    flex-direction: row;
+    flex-flow: row wrap;
     justify-content: space-between;
     margin: 75px 0;
-    gap: 60px;
 }
 .picture-explore-text {
+    margin: 0;
     width: 660px;
     position: relative;
     display: flex;
     flex-direction: column;
 }
 .picture-explore-text-cont {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-content: space-between;
@@ -466,12 +464,14 @@ h2 {
     height: 25px;
 }
 .picture-explore-img {
+    position: relative;
     margin: 15px 0 0 0;
     width: 720px;
     height: 700px;
     background-image: url(assets/img/explore-slider/before.jpg);
 }
 .picture-explore-slider {
+    display: none;
     position: relative;
     top: 90px;
     left: 1141px;
@@ -486,8 +486,7 @@ h2 {
 }
 .video-journey {
     position: relative;
-    width: 1440px;
-    height: 1246px;
+    max-width: 1440px;
     margin: auto;
     display: flex;
     flex-direction: column;
@@ -509,13 +508,14 @@ h2 {
     width: 700px;
 }
 .player {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin: 75px 0 0 0;
 }
 .player-video {
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: 650px;
     background-color: #000;
 }
@@ -528,18 +528,19 @@ h2 {
     background-image: url(./assets/img/svg/video_frame.svg);
 }
 .player-control {
-    width: 1440px;
+    width: 100%;
     height: 85px;
     background-color: #000000;
 }
 .video-journey-videos {
     margin: 40px 0 0 0;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row wrap;
     justify-content: space-between;
     gap: 42px;
 }
 .video-item {
+    margin: auto;
     width: 452px;
     height: 254px;
 }
@@ -581,7 +582,7 @@ h2 {
 }
 .art-gallery {
     position: relative;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .gallery-main-title {
@@ -619,14 +620,13 @@ h2 {
 .tickets {
     position: relative;
     width: 100%;
-    height: 743px;
     background-color: #ffffff;
 }
 .tickets-page {
     position: relative;
     display: flex;
     flex-direction: column;
-    width: 1440px;
+    max-width: 1440px;
     height: 100%;
     margin: 0 auto;
 }
@@ -637,7 +637,8 @@ h2 {
 .tickets-cont {
     position: relative;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: space-between;
     width: 100%;
     height: 550px;
     margin-top: 100px;
@@ -648,7 +649,6 @@ h2 {
 }
 .ticket-type {
     width: 270px;
-    height: 211px;
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -674,9 +674,14 @@ h2 {
 }
 .amount-cont {
     width: 175px;
-    margin-left: 215px;
     display: flex;
     flex-direction: column;
+}
+.ticket-buy {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 .amount-text {
     text-align: end;
@@ -754,7 +759,7 @@ h2 {
 }
 .contacts-page {
     position: relative;
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .contacts-title {
@@ -811,9 +816,8 @@ footer {
 .footer-container {
     position: relative;
     top: 86px;
-    width: 1440px;
+    max-width: 1440px;
     display: flex;
-    flex-direction: row;
     margin: 0 auto;
 }
 .footer-nav-list {
@@ -831,14 +835,15 @@ footer {
     gap: 25px;
 }
 .socials {
+    position: absolute;
+    top: 80px;
+    right: 0px;
     width: 340px;
     height: 48px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    align-self: flex-end;
-    margin-left: 397px;
 }
 .socials-button {
     display: flex;
@@ -865,7 +870,7 @@ footer {
     background: #666;
 }
 .footer-end {
-    width: 1440px;
+    max-width: 1440px;
     margin: 0 auto;
     position: relative;
     display: flex;
